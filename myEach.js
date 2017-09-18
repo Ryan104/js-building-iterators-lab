@@ -2,20 +2,19 @@
 
 function myEach(arr, callback) {
   
-  //  CODE INSIDE HERE   //
+  // takes an array and a callback as arguments
 
+  // itterate through array (for loop) and pass the folloing to the call back at each element
+  //  1) The current element
+  //  2) The index of the current element
+  //  3) The array itself
+  // No return value is necessary
+
+  for (let i=0; i < arr.length; i++){
+  	// at each element, call the callback function
+  	callback(arr[i], i, arr);
+  }
 }
-
-/*
- Best if you don't code out here.
- If you want to check your code, use `index.js`!
-*/
-
-
-
-
-
-
 
 // export this function (you can ignore this for now)
 module.exports = myEach;
