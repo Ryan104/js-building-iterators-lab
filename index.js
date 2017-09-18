@@ -21,6 +21,7 @@ myEach(numArray, function print(element, index, arr) {
 
 /* myMap */
 
+/*
 var input = ["a","b","c"];
 var output = myMap(input, function capitalize(v){
     return v.toUpperCase();
@@ -30,3 +31,16 @@ console.log(output);
 console.log(output[0] === "A" && output[1] === "B" && output[2] === "C"); // assertion
 
 console.log("the end");
+*/
+
+/* myReduce */
+var input = [5, 22, 7];
+
+var output = myReduce(input, function(total, current){
+	return total + current;
+});
+
+console.log('Testing myReduce');
+console.log(output); //=> 34
+console.log(output === 34);
+console.log('the end');
