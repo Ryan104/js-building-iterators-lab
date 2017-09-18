@@ -17,17 +17,16 @@ function myReduce(arr, callback, initialValue) {
 
 	if (initialValue){
 		accumulation = initialValue;
-	} else {
+	} else { // if no initial value is passed, use the first value in array as the initial value and start the for loop at index 1 instead of zero
 		accumulation = arr[0];
 		startWithIndex = 1;
 	}
 
 	for (let i=startWithIndex; i < arr.length; i++){
-		accumulation = callback(accumulation, arr[i], i, arr);
+		accumulation = callback(accumulation, arr[i], i, arr); // callback will take current accumulation and next element and return a new value for the accumulation
 	}
 
 	return accumulation;
-
 }
 
 // export this function (you can ignore this for now)
