@@ -2,6 +2,7 @@ var myEach = require('./myEach');
 var myMap = require('./myMap');
 var myReduce = require('./myReduce');
 var myFilter = require('./myFilter');
+var mySome = require('./mySome');
 /* *********************************************************************
   You can edit this file
   It will make use of your code in myEach.js, myMap.js and myReduce.js
@@ -49,6 +50,7 @@ console.log('the end');
 */
 
 /* myFilter */
+/*
 const input = [99,12,50,22];
 
 const output = myFilter(input, function(num){
@@ -56,5 +58,22 @@ const output = myFilter(input, function(num){
 });
 
 console.log(output); // => [99,50]
+*/
+
+/* mySome */
+/*
+const input = [99,12,50,22];
+
+const output = mySome(input, function(num){
+	return num < 13;
+});
+
+console.log(output);
+*/
+
+/* myEvery */
+const input = [99,12,50,22];
+
+
 
 

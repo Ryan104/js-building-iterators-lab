@@ -14,8 +14,7 @@ chai.config.showDiff = true; // turn on reporter diff display
 
 var myFilter = require('../myFilter');
 
-var testCallBack;ls
-
+var testCallBack;
 
 describe('myFilter', function(){
 	// Sample Data
